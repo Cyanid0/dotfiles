@@ -119,3 +119,4 @@ fi
 
 alias config='/usr/bin/git --git-dir=/home/cyanido/.cfg/ --work-tree=/home/cyanido'
 alias config='/usr/bin/git --git-dir=/home/cyanido/.cfg/ --work-tree=/home/cyanido'
+alias config='/usr/bin/git --git-dir=/home/cyanido/.cfg/ --work-tree=/home/cyanido'

@@ -60,13 +60,13 @@ ZSH_THEME="pixegami-agnoster"
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
   git
+  z
   zsh-syntax-highlighting
   zsh-autosuggestions
   web-search
 )
 
 source $ZSH/oh-my-zsh.sh
-
 # User configuration
 
 # export MANPATH="/usr/local/man:$MANPATH"
@@ -98,10 +98,11 @@ source $ZSH/oh-my-zsh.sh
 export PATH=/home/cyanido/.local/share/solana/install/active_release/bin:/home/cyanido/.cargo/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin
 export PATH=$PATH:/usr/local/go/bin
 export PATH="$PATH:/home/cyanido/.local/bin"
-
 fastfetch
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 fpath+=${ZDOTDIR:-~}/.zsh_functions
+
+eval $(thefuck --alias)
